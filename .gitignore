@@ -11,3 +11,8 @@ node_modules/
 
 # Local Claude config
 .claude/
+
+# Secrets / environment
+.env
+.env.local
+*.local.env

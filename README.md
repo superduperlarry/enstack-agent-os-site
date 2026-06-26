@@ -6,20 +6,14 @@ Marketing landing page for **Enstack Agent OS** by **enos** — the money stack 
 
 ## Stack
 
-Plain static site — no build step, no dependencies.
+Single self-contained static page — no build step, no dependencies, no external files.
 
-- `index.html` — page structure and content
-- `styles.css` — dark fintech theme, fully responsive
-- `script.js` — sticky-nav state + reveal-on-scroll
+- `index.html` — everything inline: markup, CSS (in `<style>`), JS (in `<script>`), and the brand logo embedded as a data URI. Renders correctly even when opened directly from disk (`file://`) with no server.
+- `assets/` — source brand logos (`enos-logo.png`, `enos-mark.png`).
 
 ## Run locally
 
-Just open `index.html` in a browser, or serve the folder:
-
-```bash
-python -m http.server 8000
-# then visit http://localhost:8000
-```
+Just double-click `index.html` — it works on its own. (Only Google Fonts load over the network; everything else is embedded.)
 
 ## Sections
 
